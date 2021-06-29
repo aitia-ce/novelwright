@@ -13,42 +13,70 @@
     gtag('config', 'G-6XY5C8HDWJ');
     </script>
     <style>
+        body {
+            margin: 0;
+        }
         a {
-            color:crimson
+            color:black
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 20px
+        }
+        #grid ol {
+            border-right: 1px solid gray;
+            width: 150px;
+            margin:0;
+            padding: 40px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+        #article {
+            padding-top: 45px;
+            padding-right: 30px;
         }
     </style>
 </head>
 <body>
-    <h1><a href=index.html>노벨라이트</a></h1>
-    <ol>
-        <li><a href=1.html>대학생 한승현</a></li>
-        <li><a href=2.html>대학생 윤민서</a></li>
-        <li><a href=3.html>군인 선우용비</a></li>
-    </ol>
-    <img src="책장.jpg" width="40%">
-    <p><strong><u>노벨라이트</u></strong>는 전례없는 이야기의 세계를 만들어진 4명의 신으로 이루어짐. 그러나 그 중 하나의 신은 다른 신과의 전쟁을 통해 노벨라이트의 정체성을 상실하고 잠적함. 결국 3명의 신이 남았지만 전례없는 이야기의 세계는 정체되어버림. 그렇다면 정체된 세계를 두고 신들은 무엇을 했을까? 현실이라고 부르는 이곳에서 그들을 위해서 수행할 '명예 노벨라이트'라는 이름의 사도 여럿을 마련함. 그리고 <strong><a href="radio.html" target="_blank">동영상</a></strong>을 비롯한 다양한 매체를 통해서 본인들의 흔적들을 남기기 시작함. 아직 소실된 흔적도 존재하지만 이미 존재하는 흔적들도 여럿 있음.</p><br>
-    <p>그러나 노베르곤글라이트 데테인은 여전히 신들을 기다리고 있다......</p><br><br><br>
-    <p><strong><a href="원문.html" target="_blank"><u>전례없는 이야기 원문</u>보기(스압주의)</a></strong></p>
-    <p>
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://novelwright.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
+    <h1><a href=index.html style="color: crimson; text-decoration: none;">노벨라이트</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href=1.html>대학생 한승현</a></li>
+            <li><a href=2.html>대학생 윤민서</a></li>
+            <li><a href=3.html>군인 선우용비</a></li>
+        </ol>
+        <div id="article">
+            <img src="책장.jpg" width="40%">
+            <p>노벨라이트는 전례없는 이야기의 세계를 만들어진 4명의 신으로 이루어짐. 그러나 그 중 하나의 신은 다른 신과의 전쟁을 통해 노벨라이트의 정체성을 상실하고 잠적함. 결국 3명의 신이 남았지만 전례없는 이야기의 세계는 정체되어버림. 그렇다면 정체된 세계를 두고 신들은 무엇을 했을까? 현실이라고 부르는 이곳에서 그들을 위해서 수행할 '명예 노벨라이트'라는 이름의 사도 여럿을 마련함. 그리고 <strong><a href="radio.html" target="_blank" title="노벨라디오">동영상</a></strong>을 비롯한 다양한 매체를 통해서 본인들의 흔적들을 남기기 시작함. 아직 소실된 흔적도 존재하지만 이미 존재하는 흔적들도 여럿 있음.</p><br>
+            <p>그러나 노베르곤글라이트 데테인은 여전히 신들을 기다리고 있다......</p><br><br><br>
+            <p><strong><a href="원문.html" target="_blank"><u>전례없는 이야기 원문</u>보기(스압주의)</a></strong></p>
+            <p>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://novelwright.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
